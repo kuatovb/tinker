@@ -1,0 +1,4 @@
+# tinker Collaboration Bridge Dependencies (Feature 007)
+# Python 3.12+ dedicated virtual environment: logs/ai/collaboration/venv/
+# Official Model Context Protocol SDK (v2 server support via `from mcp.server import MCPServer`)
+mcp==2.3.0

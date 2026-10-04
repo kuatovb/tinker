@@ -1,0 +1,13 @@
+logs/
+local-archive/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12

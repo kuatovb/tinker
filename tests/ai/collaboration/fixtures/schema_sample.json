@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AntigravityExecutorResult",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "work_id",
+    "turn_id",
+    "kind",
+    "summary",
+    "claimed_files",
+    "checks",
+    "remaining_actions",
+    "question",
+    "block_reason"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "work_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "turn_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "kind": {
+      "type": "string",
+      "enum": ["question", "implementation_result", "blocked"]
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claimed_files": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["criterion_id", "status", "command_or_description"],
+        "properties": {
+          "criterion_id": { "type": "string" },
+          "task_id": { "type": ["string", "null"] },
+          "status": {
+            "type": "string",
+            "enum": ["passed", "failed", "not_run"]
+          },
+          "command_or_description": { "type": "string" },
+          "exit_code": { "type": ["integer", "null"] },
+          "evidence": { "type": ["string", "null"] },
+          "limitation": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "remaining_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "question": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "question_id": { "type": "string" },
+        "text": { "type": "string" },
+        "decision_kind": {
+          "type": "string",
+          "enum": ["technical", "scope", "permission"]
+        }
+      }
+    },
+    "block_reason": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "code": { "type": "string" },
+        "needed_action": { "type": "string" }
+      }
+    }
+  }
+}

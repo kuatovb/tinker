@@ -1,0 +1,232 @@
+{
+  "project": "tinker",
+  "date": "2026-10-05",
+  "source_repository": "https://github.com/kuatovb/inventory_system.git",
+  "source_commit": "7c308bedb99df3e246b901d986bee367b6528fec",
+  "tracked_files": [
+    {
+      "source": "scripts/ai/collaboration-requirements.txt",
+      "destination": "scripts/ai/collaboration-requirements.txt",
+      "source_sha256": "86bd5646cf5024881c82081dde31f39d2e4a655c32aaa867c0d3b231df8d9a4b",
+      "destination_sha256": "59572fbcb7d3224af8b2147050f80343c38147b5812e7dbb7635169b61d3e57a",
+      "changes": [
+        "QUBE.Inventory -> tinker (labels only)"
+      ]
+    },
+    {
+      "source": "scripts/ai/collaboration/__init__.py",
+      "destination": "scripts/ai/collaboration/__init__.py",
+      "source_sha256": "0c9d0570fa40ee4c3d53213b1a0077ce7b733c3b4bb8ac2eaff2b8adcceee259",
+      "destination_sha256": "e1237db23efae9a512b86ba2ce1536afdf4e1f3c776b1c9ee392df5569f39f2f",
+      "changes": [
+        "QUBE.Inventory -> tinker (labels only)"
+      ]
+    },
+    {
+      "source": "scripts/ai/collaboration/coordinator.py",
+      "destination": "scripts/ai/collaboration/coordinator.py",
+      "source_sha256": "fd62445caa4aa2794c3708469d0324f232582fb54dbb958b87076c8f2289ba87",
+      "destination_sha256": "fd62445caa4aa2794c3708469d0324f232582fb54dbb958b87076c8f2289ba87",
+      "changes": []
+    },
+    {
+      "source": "scripts/ai/collaboration/environment.py",
+      "destination": "scripts/ai/collaboration/environment.py",
+      "source_sha256": "fbd227082e4408968f3d80d70b11f1490da8df6ca8ca040bc7c5f9107ce5d2d2",
+      "destination_sha256": "fbd227082e4408968f3d80d70b11f1490da8df6ca8ca040bc7c5f9107ce5d2d2",
+      "changes": []
+    },
+    {
+      "source": "scripts/ai/collaboration/state.py",
+      "destination": "scripts/ai/collaboration/state.py",
+      "source_sha256": "848650375ad77ff58c9663c17aff09654034524e50a8cc04432245c2c905d47f",
+      "destination_sha256": "b79569f84ccb5b6f8c241cc35233ae6b1e1f25a565e627f54c5df3f6711578c6",
+      "changes": [
+        "QUBE.Inventory -> tinker (labels only)"
+      ]
+    },
+    {
+      "source": "scripts/ai/collaboration/worker.py",
+      "destination": "scripts/ai/collaboration/worker.py",
+      "source_sha256": "06956d8b27b15f05820d3761691c73a2927e375ad396509726ad6cc480d95cff",
+      "destination_sha256": "06956d8b27b15f05820d3761691c73a2927e375ad396509726ad6cc480d95cff",
+      "changes": []
+    },
+    {
+      "source": "scripts/ai/collaboration/worker_main.py",
+      "destination": "scripts/ai/collaboration/worker_main.py",
+      "source_sha256": "b4119602b2a79cb18d7e6adda0f267a029444fbb24c23aeb2b23b45a0d2ce3ab",
+      "destination_sha256": "4f5d8cb4fc14ae51c66a7cd9e2a011903d96d7423a00dc4668eb9cab7db8c6c5",
+      "changes": [
+        "QUBE.Inventory -> tinker (labels only)"
+      ]
+    },
+    {
+      "source": "scripts/ai/collaboration_bridge.py",
+      "destination": "scripts/ai/collaboration_bridge.py",
+      "source_sha256": "04aa756b71e397fcb27e565f8266defc915a0f5dcba3a771cdf08268680b2348",
+      "destination_sha256": "606282d7127f465b19f8ef80b37096a7b73104bc892406205f1075a0cc7e6ccf",
+      "changes": [
+        "QUBE.Inventory -> tinker (labels only)"
+      ]
+    },
+    {
+      "source": "specs/007-ai-agent-collaboration/checklists/requirements.md",
+      "destination": "specs/007-ai-agent-collaboration/checklists/requirements.md",
+      "source_sha256": "ddb01f4b8ab420cb24b8aa42be0fbccd5a1e1faf4fcdd7c87cfa7c259e41dfdc",
+      "destination_sha256": "ddb01f4b8ab420cb24b8aa42be0fbccd5a1e1faf4fcdd7c87cfa7c259e41dfdc",
+      "changes": []
+    },
+    {
+      "source": "specs/007-ai-agent-collaboration/contracts/bridge.md",
+      "destination": "specs/007-ai-agent-collaboration/contracts/bridge.md",
+      "source_sha256": "22d32ff7372cef0d0c5cd7e5f73c130708746b469f471439d9be363bbea3388b",
+      "destination_sha256": "22d32ff7372cef0d0c5cd7e5f73c130708746b469f471439d9be363bbea3388b",
+      "changes": []
+    },
+    {
+      "source": "specs/007-ai-agent-collaboration/data-model.md",
+      "destination": "specs/007-ai-agent-collaboration/data-model.md",
+      "source_sha256": "8bf80150b280ca33b5aea502aacb6e75fb63600dcce4436b16870f9d81db43db",
+      "destination_sha256": "8bf80150b280ca33b5aea502aacb6e75fb63600dcce4436b16870f9d81db43db",
+      "changes": []
+    },
+    {
+      "source": "specs/007-ai-agent-collaboration/plan.md",
+      "destination": "specs/007-ai-agent-collaboration/plan.md",
+      "source_sha256": "529d6b48b757ccb5bd93d485546ea32c7ec47e8c23c259d6fe239fbbda977847",
+      "destination_sha256": "5a94d6e6375a533e62a3b36e267dccb8ba70887e7ca919155d05155f70ae7598",
+      "changes": [
+        "Migration/status note; requirements and task checkboxes preserved",
+        "Inventory Android research link points to original source commit"
+      ]
+    },
+    {
+      "source": "specs/007-ai-agent-collaboration/quickstart.md",
+      "destination": "specs/007-ai-agent-collaboration/quickstart.md",
+      "source_sha256": "78d28dcfad45d8c9392c2d68579099f836e306cd4ed06875610ca83119940ce8",
+      "destination_sha256": "78d28dcfad45d8c9392c2d68579099f836e306cd4ed06875610ca83119940ce8",
+      "changes": []
+    },
+    {
+      "source": "specs/007-ai-agent-collaboration/research.md",
+      "destination": "specs/007-ai-agent-collaboration/research.md",
+      "source_sha256": "2133b03485fb19297294b80920fb6df4f99e662ff6850061cc8d30295675fb6b",
+      "destination_sha256": "135188213c2d46d44b55ad391fefacec1ddff4a9d4cf27966735cb5a1b5e0eb4",
+      "changes": [
+        "Inventory Android research link points to original source commit"
+      ]
+    },
+    {
+      "source": "specs/007-ai-agent-collaboration/spec.md",
+      "destination": "specs/007-ai-agent-collaboration/spec.md",
+      "source_sha256": "19f7d02b275d1187fe89f7a5e335344f17c855fa5ddb8b69e60c2138cabc9e1f",
+      "destination_sha256": "ea1fd88ac0d79fa8d379f654a0c794c93da0c5ccc36c8e33794cfb70c0a83a72",
+      "changes": [
+        "Migration/status note; requirements and task checkboxes preserved"
+      ]
+    },
+    {
+      "source": "specs/007-ai-agent-collaboration/tasks.md",
+      "destination": "specs/007-ai-agent-collaboration/tasks.md",
+      "source_sha256": "a70f5307d4340e9a36c7764c2a436b41e64c77444005a247dedc08cf09f82472",
+      "destination_sha256": "e88d7948736323986fdc9aa3a8bc3b1dceb2a8c3168abaf1dec18fba5e5781af",
+      "changes": [
+        "Migration/status note; requirements and task checkboxes preserved"
+      ]
+    },
+    {
+      "source": "tests/ai/collaboration/__init__.py",
+      "destination": "tests/ai/collaboration/__init__.py",
+      "source_sha256": "0a0865277e450a4dd6106599ab8981273058d64a52d81b7093b55dbc79151375",
+      "destination_sha256": "0a0865277e450a4dd6106599ab8981273058d64a52d81b7093b55dbc79151375",
+      "changes": []
+    },
+    {
+      "source": "tests/ai/collaboration/fake_cli.py",
+      "destination": "tests/ai/collaboration/fake_cli.py",
+      "source_sha256": "d99a27a8ef819e8607049103434bc19f8cd89525a691b688c381788e6ef414c6",
+      "destination_sha256": "d99a27a8ef819e8607049103434bc19f8cd89525a691b688c381788e6ef414c6",
+      "changes": []
+    },
+    {
+      "source": "tests/ai/collaboration/fixtures/model_sample.json",
+      "destination": "tests/ai/collaboration/fixtures/model_sample.json",
+      "source_sha256": "d325c7ebf0d1d2ec2e02c572df36c4a4042d81c204468a663f20d15e405aaafe",
+      "destination_sha256": "d325c7ebf0d1d2ec2e02c572df36c4a4042d81c204468a663f20d15e405aaafe",
+      "changes": []
+    },
+    {
+      "source": "tests/ai/collaboration/fixtures/schema_sample.json",
+      "destination": "tests/ai/collaboration/fixtures/schema_sample.json",
+      "source_sha256": "074a58c82983db8043de3b94598aafb807518af89414a5c55bc4c04a653df93a",
+      "destination_sha256": "074a58c82983db8043de3b94598aafb807518af89414a5c55bc4c04a653df93a",
+      "changes": []
+    },
+    {
+      "source": "tests/ai/collaboration/fixtures/structured_output_sample.json",
+      "destination": "tests/ai/collaboration/fixtures/structured_output_sample.json",
+      "source_sha256": "ecfd66ad20bc6e379a2f4a9b0c93c17b1a791f9ecb93b0be51aeedc787599c8a",
+      "destination_sha256": "ecfd66ad20bc6e379a2f4a9b0c93c17b1a791f9ecb93b0be51aeedc787599c8a",
+      "changes": []
+    },
+    {
+      "source": "tests/ai/collaboration/fixtures/usage_sample.json",
+      "destination": "tests/ai/collaboration/fixtures/usage_sample.json",
+      "source_sha256": "b652defadc606cdac988e06b1357b1c198ee868c13312e48f0bcc2fa03c0f5c6",
+      "destination_sha256": "b652defadc606cdac988e06b1357b1c198ee868c13312e48f0bcc2fa03c0f5c6",
+      "changes": []
+    },
+    {
+      "source": "tests/ai/collaboration/test_assignment.py",
+      "destination": "tests/ai/collaboration/test_assignment.py",
+      "source_sha256": "d11054806f597fe58ed2678c382f119058bd0db4835759c85f8a3bd8a845357c",
+      "destination_sha256": "d11054806f597fe58ed2678c382f119058bd0db4835759c85f8a3bd8a845357c",
+      "changes": []
+    },
+    {
+      "source": "tests/ai/collaboration/test_environment.py",
+      "destination": "tests/ai/collaboration/test_environment.py",
+      "source_sha256": "074fbf4feeb5c3f8fd0b74c8a964fe0d5e7d7d8c1e4117b7479aacd4a7b382f5",
+      "destination_sha256": "074fbf4feeb5c3f8fd0b74c8a964fe0d5e7d7d8c1e4117b7479aacd4a7b382f5",
+      "changes": []
+    },
+    {
+      "source": "tests/ai/collaboration/test_quota.py",
+      "destination": "tests/ai/collaboration/test_quota.py",
+      "source_sha256": "0075bed585aa3def160628c5a23abdd974a321cf8981b41a729fb1cb45e13b6c",
+      "destination_sha256": "0075bed585aa3def160628c5a23abdd974a321cf8981b41a729fb1cb45e13b6c",
+      "changes": []
+    },
+    {
+      "source": "tests/ai/collaboration/test_start.py",
+      "destination": "tests/ai/collaboration/test_start.py",
+      "source_sha256": "46e5f61daaa15bc7eb0e412158dfbaf11edba8b49e5e49843165ba983b7fbab5",
+      "destination_sha256": "66920b68a3f997967aa3720f7df06176dcfd06f4dbc254568ec9050ceedaa6c6",
+      "changes": [
+        "QUBE.Inventory -> tinker (labels only)"
+      ]
+    },
+    {
+      "source": "tests/ai/collaboration/test_state.py",
+      "destination": "tests/ai/collaboration/test_state.py",
+      "source_sha256": "cbfa84552448340cb1e91351e7ad0c63b2164ce1579546b254cb7f35671323d9",
+      "destination_sha256": "cbfa84552448340cb1e91351e7ad0c63b2164ce1579546b254cb7f35671323d9",
+      "changes": []
+    },
+    {
+      "source": "tests/ai/collaboration/test_worker.py",
+      "destination": "tests/ai/collaboration/test_worker.py",
+      "source_sha256": "5fe8feed214459c757f15e92e31c19001fd052a19861c94632655cdd1f5a9e81",
+      "destination_sha256": "5fe8feed214459c757f15e92e31c19001fd052a19861c94632655cdd1f5a9e81",
+      "changes": []
+    }
+  ],
+  "exclusions": [
+    "application code",
+    "credentials and personal CLI configuration",
+    "virtual environments",
+    "raw logs and runtime state",
+    "Inventory Graphify graph"
+  ]
+}

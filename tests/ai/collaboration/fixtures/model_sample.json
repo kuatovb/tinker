@@ -1,0 +1,14 @@
+{
+  "status": "SUCCESS",
+  "command": {
+    "name": "model",
+    "data": {
+      "id": "gemini-3.8-flash",
+      "label": "Gemini 3.8 Flash (High)",
+      "effort": "high",
+      "is_default": true
+    }
+  },
+  "num_turns": 0,
+  "total_tokens": 0
+}

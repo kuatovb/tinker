@@ -1,0 +1,43 @@
+{
+  "status": "SUCCESS",
+  "command": {
+    "name": "usage",
+    "data": {
+      "groups": [
+        {
+          "name": "Gemini Models",
+          "buckets": [
+            {
+              "id": "gemini_weekly",
+              "name": "Weekly limit",
+              "window": "weekly",
+              "remaining_fraction": 0.9147,
+              "reset_time": "2029-01-01T00:00:00Z"
+            },
+            {
+              "id": "gemini_five_hour",
+              "name": "5-Hour window",
+              "window": "5h",
+              "remaining_fraction": 0.9657,
+              "reset_time": "2029-01-01T00:00:00Z"
+            }
+          ]
+        },
+        {
+          "name": "Claude and GPT models",
+          "buckets": [
+            {
+              "id": "claude_gpt_daily",
+              "name": "Daily limit",
+              "window": "24h",
+              "remaining_fraction": 1.0,
+              "reset_time": "2029-01-01T00:00:00Z"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "num_turns": 0,
+  "total_tokens": 0
+}
