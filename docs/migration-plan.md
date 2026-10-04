@@ -30,7 +30,7 @@
 
 - [x] Скопировать tracked-исходники, CLI, requirements, тесты, спецификацию 007 и исторический walkthrough; добавить README, AGENTS, .gitignore и manifest происхождения.
 - [x] Подготовить отдельное Python-окружение; выполнить полный unittest discover и CLI --help; сверить файлы и задачи.
-- [ ] Создать Conventional Commit в tinker, выполнить push и сверить удалённый HEAD.
-- [ ] Архивировать локальные журналы отдельно от Git; очистить перенесённые файлы, окружение и кэши Inventory после проверки процессов.
-- [ ] Оставить ручной workflow в AGENTS и документации Inventory; сохранить исторический changelog; обновить Graphify после удаления исходников.
-- [ ] Проверить diff и ссылки Inventory, записать walkthrough, создать commit и push.
+- [x] Создать Conventional Commit в tinker, выполнить push и сверить удалённый HEAD.
+- [x] Архивировать локальные журналы отдельно от Git; очистить перенесённые файлы, окружение и кэши Inventory после проверки процессов.
+- [x] Оставить ручной workflow в AGENTS и документации Inventory; сохранить исторический changelog; обновить Graphify после удаления исходников.
+- [x] Проверить diff и ссылки Inventory, записать walkthrough, создать commit и push.
