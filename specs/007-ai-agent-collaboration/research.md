@@ -46,13 +46,13 @@ Native EXE + argv + UTF-8 stdin поддерживают пробелы/кири
 
 ## 6. Состояние исследования
 
-Неопределённостей, требующих нового пользовательского требования, нет. Реализация должна проверить wire schema/EOF, background completion, поздние ошибки и наличие native EXE на втором устройстве. Это acceptance risks с явным отрицательным исходом, а не допущения об успешной проверке. Gradle 9.7.1 уже закреплён Wrapper; AGP/Kotlin/KSP migration остаётся отдельным долгом, см. [исследование Android](https://github.com/kuatovb/inventory_system/blob/7c308bedb99df3e246b901d986bee367b6528fec/docs/ANDROID_BUILD_TOOLCHAIN_RESEARCH.md).
+Неопределённостей, требующих нового пользовательского требования, нет. Реализация должна проверить wire schema/EOF, background completion, поздние ошибки и наличие native EXE на втором устройстве. Это acceptance risks с явным отрицательным исходом, а не допущения об успешной проверке.
 
 ## 7. Контроль лимитов исполнителя — дополнение 2026-10-04
 
 **Решение:** read-only print `/model` и `/usage` отдельно от генерации. По официальному changelog они отвечают без agent turn и расхода квоты; проверка установленной 1.2.16 подтвердила SUCCESS, num_turns=0 и total_tokens=0. [Changelog](https://github.com/google-antigravity/antigravity-cli/blob/main/CHANGELOG.md), [CLI reference](https://www.antigravity.google/docs/cli/reference/).
 
-Фактический `/usage` JSON имеет `command.data.groups[].buckets[]`: группировку, remaining_fraction, reset_time и window; `/model` — id/label/effort/is_default. Нормализуем только нужную группу и окна, без identity/auth. На момент проверки Gemini weekly remaining — около 91.5%, five-hour — около 96.6%; Claude/GPT окна — 100%. Это снимок текущего аккаунта, не постоянная конфигурация или гарантия последующего остатка.
+Фактический `/usage` JSON имеет `command.data.groups[].buckets[]`: группировку, remaining_fraction, reset_time и window; `/model` — id/label/effort/is_default. Нормализуем только нужную группу и окна, без identity/auth. Остаток каждого окна определяется свежим снимком конкретного пользователя; значения не фиксируются как настройки проекта.
 
 Первый запуск в ограниченной среде вернул ERROR без надёжной quota. Повтор с доступом к локальной CLI среде успешен; внешнее ожидание ограничено. Это подтверждает необходимость unknown outcome и внешнего timeout, а не fallback на session tokens. Не читать keyring/auth-файлы или использовать private provider API.
 
